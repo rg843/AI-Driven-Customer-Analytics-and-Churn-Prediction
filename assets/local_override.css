@@ -1,0 +1,126 @@
+/* Scoped overrides for AI-Driven Customer app only
+   These rules apply only when the `data-adc-theme` attribute
+   is present on the document body, so we don't modify shared CSS.
+*/
+
+[data-adc-theme="true"] body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Accent variables */
+:root { --adc-accent: #ff7a45; --adc-accent-dark: #e25822; --adc-contrast: #ffffff }
+
+/* Load a neat sans font for the app (falls back to system fonts if blocked) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+[data-adc-theme="true"] body, [data-adc-theme="true"] .app-title, [data-adc-theme="true"] .app-sub {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Sidebar styling (scoped) */
+[data-adc-theme="true"] section[data-testid="stSidebar"] {
+  background: linear-gradient(180deg, rgba(79,45,125,0.98), rgba(102,16,242,0.95));
+  color: #ffffff !important;
+  padding: 18px !important;
+  border-radius: 10px !important;
+}
+[data-adc-theme="true"] section[data-testid="stSidebar"] .stMarkdown, [data-adc-theme="true"] section[data-testid="stSidebar"] .stText, [data-adc-theme="true"] section[data-testid="stSidebar"] label {
+  color: rgba(255,255,255,0.95) !important;
+}
+
+[data-adc-theme="true"] .stButton>button {
+  background-color: var(--adc-accent) !important;
+  color: var(--adc-contrast) !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08) !important;
+  border: 0 !important;
+  padding: 10px 16px !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+}
+
+[data-adc-theme="true"] .stButton>button:hover {
+  background-color: var(--adc-accent-dark) !important;
+}
+
+/* App header styles to create a distinct brand */
+[data-adc-theme="true"] .app-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(111,66,193,0.95) 0%, rgba(102,16,242,0.95) 100%);
+  box-shadow: 0 6px 18px rgba(79, 45, 125, 0.12);
+  margin-bottom: 14px;
+}
+
+[data-adc-theme="true"] .app-header img { border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+[data-adc-theme="true"] .app-header .app-title { font-size: 20px; font-weight: 800; color: #ffffff; }
+[data-adc-theme="true"] .app-header .app-sub { font-size: 12px; color: rgba(255,255,255,0.85); margin-top: 2px; }
+
+/* Larger header title */
+[data-adc-theme="true"] .app-header .app-title { font-size: 24px !important; letter-spacing: 0.2px; }
+
+/* Tagline animation */
+@keyframes adc-tagline {
+  0% { transform: translateY(6px); opacity: 0 }
+  60% { transform: translateY(-2px); opacity: 1 }
+  100% { transform: translateY(0); opacity: 1 }
+}
+[data-adc-theme="true"] .app-header .app-sub { animation: adc-tagline 900ms ease both; }
+
+/* Cards */
+[data-adc-theme="true"] .stBlock {
+  border-radius: 10px !important;
+}
+
+[data-adc-theme="true"] .stTextInput>div>div>input,
+[data-adc-theme="true"] .stNumberInput>div>div>input,
+[data-adc-theme="true"] .stSelectbox>div>div>div>div {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #cccccc !important;
+}
+
+[data-adc-theme="true"] .stDataFrame table {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Table header and metric highlight */
+[data-adc-theme="true"] .stDataFrame table thead th {
+  background: linear-gradient(90deg,#f3e8ff,#efe6ff) !important;
+  color: #3b185f !important;
+  border-bottom: 1px solid rgba(75,0,130,0.08) !important;
+}
+
+[data-adc-theme="true"] .stMetric .stMetricValue, [data-adc-theme="true"] .stMetricValue {
+  color: var(--adc-accent) !important;
+  font-weight: 700 !important;
+}
+
+[data-adc-theme="true"] .block-container {
+  background: linear-gradient(180deg, #ffffff, #fbf8ff) !important;
+  border-radius: 12px !important;
+  padding: 1.0rem 1.4rem !important;
+}
+
+/* Make scrollbars light */
+[data-adc-theme="true"] ::-webkit-scrollbar { width: 10px; }
+[data-adc-theme="true"] ::-webkit-scrollbar-track { background: #f0f0f0; }
+[data-adc-theme="true"] ::-webkit-scrollbar-thumb { background: #c0c0c0; border-radius: 6px; }
+
+/* Links */
+[data-adc-theme="true"] a { color: #c9a7ff !important; }
+
+/* Footer */
+[data-adc-theme="true"] .app-footer {
+  margin-top: 28px;
+  padding: 12px 18px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.85);
+  font-size: 13px;
+  text-align: center;
+}
+
+[data-adc-theme="true"] .app-footer a { color: #e9d7ff !important; text-decoration: none; }

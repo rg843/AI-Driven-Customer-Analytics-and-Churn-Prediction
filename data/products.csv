@@ -1,0 +1,26 @@
+product_id,product_name,category,price,recommended_min_salary
+1,Smartphone,Home,143,28000
+2,Laptop,Accessories,183,28000
+3,Wireless Earbuds,Home,131,28000
+4,Fitness Tracker,Outdoor,154,28000
+5,Smartwatch,Home,169,28000
+6,Tablet,Home,135,28000
+7,Noise Cancelling Headphones,Accessories,162,28000
+8,Gaming Console,Fitness,160,28000
+9,Electric Scooter,Outdoor,168,28000
+10,4K Monitor,Home,142,28000
+11,Portable Charger,Fitness,175,28000
+12,Coffee Maker,Outdoor,197,28000
+13,Blender,Home,235,28000
+14,Air Fryer,Electronics,223,28000
+15,Premium Desk Chair,Electronics,270,28000
+16,Office Lamp,Electronics,173,28000
+17,Backpack,Fitness,235,28000
+18,Running Shoes,Home,216,28000
+19,Jacket,Outdoor,291,28000
+20,Designer Sunglasses,Home,191,28000
+21,Yoga Mat,Accessories,195,28000
+22,Water Bottle,Electronics,209,28000
+23,Bluetooth Speaker,Fitness,160,28000
+24,Digital Camera,Accessories,221,28000
+25,Streaming Device,Electronics,218,28000

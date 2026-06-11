@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="48" viewBox="0 0 140 48">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+        <stop offset="0%" stop-color="#6f42c1"/>
+        <stop offset="50%" stop-color="#6610f2"/>
+        <stop offset="100%" stop-color="#4f46a4"/>
+      </linearGradient>
+    </defs>
+  <rect width="140" height="48" rx="10" fill="url(#g)"/>
+  <text x="18" y="30" font-family="Segoe UI, Arial" font-size="16" font-weight="700" fill="#fff">ADC CX</text>
+  <text x="18" y="42" font-family="Segoe UI, Arial" font-size="10" fill="rgba(255,255,255,0.85)">Customer Studio</text>
+</svg>

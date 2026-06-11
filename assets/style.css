@@ -1,0 +1,29 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.css-1v3fvcr {
+    background-color: #f5f7fa;
+}
+
+.stButton>button {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 8px;
+}
+
+.stTextInput>div>div>input {
+    border-radius: 8px;
+}
+
+.stSelectbox>div>div>div>div {
+    border-radius: 8px;
+}
+
+.reportview-container .markdown-text-container {
+    font-size: 1rem;
+}
+
+.block-container {
+    padding: 1rem 2rem 2rem 2rem;
+}
